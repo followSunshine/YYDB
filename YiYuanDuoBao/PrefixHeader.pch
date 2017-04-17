@@ -1,0 +1,27 @@
+//
+//  PrefixHeader.pch
+//  YiYuanDuoBao
+//
+//  Created by chenyu on 16/8/29.
+//  Copyright © 2016年 chen1. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#define SWIDTH [UIScreen mainScreen].bounds.size.width
+#define SHEIGHT [UIScreen mainScreen].bounds.size.height
+#define SF_COLOR(RED, GREEN, BLUE)	[UIColor colorWithRed:RED/255.0f green:GREEN/255.0f blue:BLUE/255.0f alpha:1]
+
+#import "UIView+CGGetRect.h"
+#import "LoginViewController.h"
+#import "AppDelegate.h"
+#define NavHeight 64*667/[UIScreen mainScreen].bounds.size.height
+
+#define urlpre @"https://y.api.ikaiwan.com/main/1.7/liweijia.php"
+#define urladress @"https://s3.vbokai.com/"
+//#define urlpre @"http://192.168.199.155/main/1.6/index.php"
+//#define urladress @"http://192.168.199.155/"
+#endif /* PrefixHeader_pch */
